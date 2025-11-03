@@ -135,40 +135,18 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="bg-[#223958]/80 backdrop-blur-md rounded-xl md:rounded-l-xl md:rounded-r-none shadow-lg border border-[#223958]/30 p-6 md:p-8 relative md:absolute md:right-0 md:top-0 md:w-[calc(50%+8rem)] lg:w-[calc(50%+12rem)] xl:w-[calc(50%+16rem)] md:h-full hover:bg-[#223958]/90 transition-all duration-300">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+            <div className="bg-[#223958]/80 backdrop-blur-md rounded-xl md:rounded-l-xl md:rounded-r-none shadow-lg border border-[#223958]/30 p-6 md:p-8 relative md:absolute md:right-0 md:top-0 md:w-[calc(50%+8rem)] lg:w-[calc(50%+12rem)] xl:w-[calc(50%+16rem)] md:h-full hover:bg-[#223958]/90 transition-all duration-300 flex items-center justify-center">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 justify-items-center w-full">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
-                      <svg
-                        width="24"
-                        height="24"
-                        className="md:w-8 md:h-8"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M5 17C5 17.5304 5.21071 18.0391 5.58579 18.4142C5.96086 18.7893 6.46957 19 7 19C7.53043 19 8.03914 18.7893 8.41421 18.4142C8.78929 18.0391 9 17.5304 9 17C9 16.4696 8.78929 15.9609 8.41421 15.5858C8.03914 15.2107 7.53043 15 7 15C6.46957 15 5.96086 15.2107 5.58579 15.5858C5.21071 15.9609 5 16.4696 5 17Z"
-                          stroke="white"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M19 17C19 17.5304 19.2107 18.0391 19.5858 18.4142C19.9609 18.7893 20.4696 19 21 19C21.5304 19 22.0391 18.7893 22.4142 18.4142C22.7893 18.0391 23 17.5304 23 17C23 16.4696 22.7893 15.9609 22.4142 15.5858C22.0391 15.2107 21.5304 15 21 15C20.4696 15 19.9609 15.2107 19.5858 15.5858C19.2107 15.9609 19 16.4696 19 17Z"
-                          stroke="white"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                        <path
-                          d="M7 17H1V12L3 9H8L10 7H14L16 9H21L23 12V17H17"
-                          stroke="white"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
-                      </svg>
+                      <Image
+                        src="/car.svg"
+                        alt="Carro"
+                        width={32}
+                        height={32}
+                        className="md:w-10 md:h-10 w-8 h-8"
+                        unoptimized={true}
+                      />
                     </div>
                     <h3 className="text-white font-bold text-base md:text-lg mb-2 md:mb-3">Mobilidade</h3>
                     <p className="text-white text-xs md:text-sm">
