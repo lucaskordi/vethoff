@@ -263,7 +263,8 @@ export default function Home() {
                 quality={90}
               />
               {/* Overlay escuro com gradiente para contraste do texto */}
-              <div className="absolute inset-0 bg-primary/80 md:bg-gradient-to-r md:from-primary/85 md:via-primary/60 md:to-transparent md:max-w-[55%]"></div>
+              <div className="absolute inset-0 bg-primary/80 md:hidden"></div>
+              <div className="absolute inset-0 hidden md:block bg-gradient-to-r from-primary/85 via-primary/60 to-transparent max-w-[55%]"></div>
             </div>
 
             {/* Content */}
