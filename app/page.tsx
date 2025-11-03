@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <section id="inicio" className="min-h-screen flex items-center bg-white pt-3 md:pt-4 scroll-mt-20">
+        <section id="inicio" className="min-h-screen flex items-center bg-white pt-24 md:pt-4 scroll-mt-20">
           <div className="container mx-auto px-4 py-2 md:py-3">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="space-y-6 md:space-y-8">
@@ -33,14 +33,14 @@ export default function Home() {
                           <div className="relative h-full min-h-[600px] md:min-h-[900px] lg:min-h-[1000px] py-8 -mx-4 md:-mx-8">
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
                   <div className="relative w-full h-full flex items-center justify-center">
-                    <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full bg-lightBlue/40 blur-3xl -translate-x-16 -translate-y-8"></div>
-                    <div className="absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full bg-secondary/30 blur-3xl translate-x-20 translate-y-12"></div>
-                    <div className="absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] rounded-full bg-lightBeige/35 blur-3xl -translate-x-32 translate-y-24"></div>
-                    <div className="absolute w-[180px] h-[180px] md:w-[300px] md:h-[300px] rounded-full bg-lightBlue/25 blur-2xl translate-x-28 -translate-y-16"></div>
-                    <div className="absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-full bg-secondary/25 blur-2xl -translate-x-12 translate-y-32"></div>
-                    <div className="absolute w-[120px] h-[120px] md:w-[200px] md:h-[200px] rounded-full bg-lightBeige/30 blur-2xl translate-x-40 translate-y-8"></div>
-                    <div className="absolute w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full bg-primary/15 blur-2xl -translate-x-24 -translate-y-12"></div>
-                    <div className="absolute w-[80px] h-[80px] md:w-[160px] md:h-[160px] rounded-full bg-lightBlue/20 blur-xl translate-x-36 translate-y-20"></div>
+                    <div className="absolute w-[300px] h-[300px] md:w-[500px] md:h-[500px] rounded-full bg-lightBlue/70 blur-3xl -translate-x-16 -translate-y-8"></div>
+                    <div className="absolute w-[250px] h-[250px] md:w-[400px] md:h-[400px] rounded-full bg-secondary/60 blur-3xl translate-x-20 translate-y-12"></div>
+                    <div className="absolute w-[200px] h-[200px] md:w-[350px] md:h-[350px] rounded-full bg-lightBeige/65 blur-3xl -translate-x-32 translate-y-24"></div>
+                    <div className="absolute w-[180px] h-[180px] md:w-[300px] md:h-[300px] rounded-full bg-lightBlue/55 blur-2xl translate-x-28 -translate-y-16"></div>
+                    <div className="absolute w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-full bg-secondary/50 blur-2xl -translate-x-12 translate-y-32"></div>
+                    <div className="absolute w-[120px] h-[120px] md:w-[200px] md:h-[200px] rounded-full bg-lightBeige/60 blur-2xl translate-x-40 translate-y-8"></div>
+                    <div className="absolute w-[100px] h-[100px] md:w-[180px] md:h-[180px] rounded-full bg-primary/45 blur-2xl -translate-x-24 -translate-y-12"></div>
+                    <div className="absolute w-[80px] h-[80px] md:w-[160px] md:h-[160px] rounded-full bg-lightBlue/50 blur-xl translate-x-36 translate-y-20"></div>
                   </div>
                 </div>
                 <div className="relative z-10 h-full flex items-center justify-center w-full overflow-hidden">
@@ -184,64 +184,64 @@ export default function Home() {
             <p className="text-center text-gray-600 text-sm md:text-base mb-8 md:mb-12">
               Atendemos as seguintes modalidades de Ultrassonografia Veterinária
             </p>
-            <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet001.jpg)' }}></div>
-                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center">
-                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
-                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+            <div className="flex flex-wrap justify-center gap-10 md:gap-8">
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-visible flex flex-col justify-end min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/pet001.jpg)' }}></div>
+                <div className="absolute inset-0 backdrop-blur-0 group-hover:backdrop-blur-md transition-all duration-300 rounded-xl"></div>
+                <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
+                  <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
+                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                       Abdominal Total
                     </h3>
                   </div>
                 </div>
               </div>
 
-              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet002.jpg)' }}></div>
-                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center">
-                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
-                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-visible flex flex-col justify-end min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/pet002.jpg)' }}></div>
+                <div className="absolute inset-0 backdrop-blur-0 group-hover:backdrop-blur-md transition-all duration-300 rounded-xl"></div>
+                <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
+                  <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
+                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                       Gestacional
                     </h3>
                   </div>
                 </div>
               </div>
 
-              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet003.jpg)' }}></div>
-                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center">
-                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
-                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-visible flex flex-col justify-end min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/pet003.jpg)' }}></div>
+                <div className="absolute inset-0 backdrop-blur-0 group-hover:backdrop-blur-md transition-all duration-300 rounded-xl"></div>
+                <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
+                  <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
+                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                       Torácica
                     </h3>
                   </div>
                 </div>
               </div>
 
-              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet004.jpg)' }}></div>
-                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center">
-                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
-                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-visible flex flex-col justify-end min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/pet004.jpg)' }}></div>
+                <div className="absolute inset-0 backdrop-blur-0 group-hover:backdrop-blur-md transition-all duration-300 rounded-xl"></div>
+                <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
+                  <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
+                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                       Ocular
                     </h3>
                   </div>
                 </div>
               </div>
 
-              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
-                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet005.jpg)' }}></div>
-                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
-                <div className="relative z-10 flex flex-col items-center justify-center">
-                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
-                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-visible flex flex-col justify-end min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/pet005.jpg)' }}></div>
+                <div className="absolute inset-0 backdrop-blur-0 group-hover:backdrop-blur-md transition-all duration-300 rounded-xl"></div>
+                <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
+                  <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
+                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                       Intervencionista
                     </h3>
-                    <p className="text-primary text-xs md:text-sm opacity-80 group-hover:opacity-100 mt-1">
+                    <p className="text-white group-hover:text-primary text-xs md:text-sm opacity-80 group-hover:opacity-80 mt-1 transition-colors duration-300">
                       (Citologia, Centeses)
                     </p>
                   </div>
@@ -259,11 +259,11 @@ export default function Home() {
                 src="/catdogbaixe.jpg"
                 alt="Cachorro e gato"
                 fill
-                className="object-cover scale-x-[-1]"
+                className="object-cover scale-x-[-1] object-left md:object-center"
                 quality={90}
               />
               {/* Overlay escuro com gradiente para contraste do texto */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-transparent max-w-[60%] md:max-w-[55%]"></div>
+              <div className="absolute inset-0 bg-primary/80 md:bg-gradient-to-r md:from-primary/85 md:via-primary/60 md:to-transparent md:max-w-[55%]"></div>
             </div>
 
             {/* Content */}
