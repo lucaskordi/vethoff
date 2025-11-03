@@ -4,27 +4,28 @@ import Image from 'next/image'
 import InstagramFeed from '@/components/instagram-feed'
 import Script from 'next/script'
 import Footer from '@/components/footer'
+import FloatingButtons from '@/components/floating-buttons'
 
 export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-14 md:pt-16">
-        <section className="min-h-screen flex items-center bg-white">
-          <div className="container mx-auto px-4 py-6 md:py-8">
+      <main>
+        <section id="inicio" className="min-h-screen flex items-center bg-white pt-3 md:pt-4 scroll-mt-20">
+          <div className="container mx-auto px-4 py-2 md:py-3">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="space-y-6 md:space-y-8">
                 <div className="relative inline-block">
                   <div className="absolute -left-4 md:-left-8 top-1/2 -translate-y-1/2 w-12 h-12 md:w-16 md:h-16 border-2 border-dashed border-lightBlue rounded-full opacity-50 bg-white"></div>
-                  <span className="relative text-primary font-bold text-xs md:text-sm uppercase tracking-wider bg-white px-2">
+                  <span className="relative text-primary font-bold text-[10px] md:text-xs uppercase tracking-wider bg-white px-2">
                     ULTRASSONOGRAFIA VETERINÁRIA
                   </span>
                 </div>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-tight">
                   Diagnósticos precisos, onde seu{' '}
                   <span className="text-secondary">Pet</span> estiver.
                 </h1>
-                <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-xl">
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed max-w-xl">
                   A VetHoff oferece serviços de ultrassonografia veterinária móvel com equipamentos de alta precisão e profissionais especializados, garantindo diagnósticos rápidos, confiáveis e com total comodidade.
                 </p>
                 <Button>Agendar Exame</Button>
@@ -56,87 +57,25 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <div className="absolute bottom-20 md:bottom-40 lg:bottom-48 left-0 right-0 mx-4 md:left-0 md:right-auto md:mx-0 bg-white/80 backdrop-blur-md rounded-xl shadow-xl border border-white/20 p-4 md:p-5 flex items-center gap-3 md:gap-4 z-20 w-auto max-w-[200px] md:max-w-none hover:bg-white/90 transition-all duration-300">
-                  <div className="w-10 h-10 md:w-14 md:h-14 bg-lightBlue rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      className="md:w-7 md:h-7"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M3 3V21L12 17L21 21V3L12 7L3 3Z"
-                        stroke="#223958"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M12 7V17"
-                        stroke="#223958"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-2xl md:text-3xl font-bold text-primary">86%</div>
-                    <div className="text-xs md:text-sm text-gray-600 font-medium">Business Growth</div>
-                  </div>
-                </div>
-                <div className="absolute top-12 md:top-24 right-0 left-0 mx-4 md:left-auto md:right-0 md:mx-0 bg-white/80 backdrop-blur-md rounded-xl shadow-xl border border-white/20 p-4 md:p-5 flex items-center gap-3 md:gap-4 z-20 w-auto max-w-[200px] md:max-w-none ml-auto md:ml-0 hover:bg-white/90 transition-all duration-300">
-                  <div className="w-10 h-10 md:w-14 md:h-14 bg-lightBlue rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg
-                      width="20"
-                      height="20"
-                      className="md:w-7 md:h-7"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M5 12H19"
-                        stroke="#223958"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                      <path
-                        d="M12 5L19 12L12 19"
-                        stroke="#223958"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <div className="text-2xl md:text-3xl font-bold text-primary">75%</div>
-                    <div className="text-xs md:text-sm text-gray-600 font-medium">Marketing</div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="relative mt-12 md:mt-8 lg:mt-4 bg-white pb-12 overflow-hidden">
+        <section className="relative -mt-16 md:-mt-20 lg:-mt-24 bg-white pb-12 overflow-hidden">
           <div className="relative">
             <div className="container mx-auto px-4">
-              <div className="bg-[#B9D5EA]/70 backdrop-blur-md rounded-xl shadow-lg border border-[#B9D5EA]/30 p-6 md:p-8 mb-6 md:mb-0 md:flex-1 md:max-w-md hover:bg-[#B9D5EA]/80 transition-all duration-300">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4 md:mb-6">
-                  Missão
-                </h2>
-                <p className="text-primary text-base md:text-lg leading-relaxed">
-                  Entregar diagnósticos precisos e confiáveis para nossos parceiros clínicos e uma experiência atenciosa, cuidadosa e humanizada para os Pets e tutores.
-                </p>
-              </div>
-            </div>
-            <div className="bg-[#223958]/80 backdrop-blur-md rounded-xl md:rounded-l-xl md:rounded-r-none shadow-lg border border-[#223958]/30 p-6 md:p-8 relative md:absolute md:right-0 md:top-0 md:w-[calc(50%+8rem)] lg:w-[calc(50%+12rem)] xl:w-[calc(50%+16rem)] md:h-full hover:bg-[#223958]/90 transition-all duration-300 flex items-center justify-center">
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 justify-items-center w-full">
+              <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div className="bg-[#B9D5EA] rounded-xl shadow-lg border border-[#B9D5EA]/30 p-6 md:p-8 hover:bg-[#B9D5EA]/90 transition-all duration-300 flex flex-col items-center justify-center text-center">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4 md:mb-6">
+                    Missão
+                  </h2>
+                  <p className="text-primary text-sm md:text-base leading-relaxed">
+                    Entregar diagnósticos precisos e confiáveis para nossos parceiros clínicos e uma experiência atenciosa, cuidadosa e humanizada para os Pets e tutores.
+                  </p>
+                </div>
+                <div className="bg-[#223958] rounded-xl shadow-lg border border-[#223958]/30 p-6 md:p-8 hover:bg-[#223958]/95 transition-all duration-300 flex items-center justify-center">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 justify-items-center w-full">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-12 h-12 md:w-16 md:h-16 bg-white/20 rounded-lg flex items-center justify-center mb-3 md:mb-4">
                       <Image
@@ -148,8 +87,8 @@ export default function Home() {
                         unoptimized={true}
                       />
                     </div>
-                    <h3 className="text-white font-bold text-base md:text-lg mb-2 md:mb-3">Mobilidade</h3>
-                    <p className="text-white text-xs md:text-sm">
+                    <h3 className="text-white font-bold text-sm md:text-base mb-2 md:mb-3">Mobilidade</h3>
+                    <p className="text-white text-[10px] md:text-xs">
                       Eu vou até seu paciente, para a comodidade de realizar a consulta e o exame no mesmo local.
                     </p>
                   </div>
@@ -173,8 +112,8 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-white font-bold text-base md:text-lg mb-2 md:mb-3">Experiência</h3>
-                    <p className="text-white text-xs md:text-sm">
+                    <h3 className="text-white font-bold text-sm md:text-base mb-2 md:mb-3">Experiência</h3>
+                    <p className="text-white text-[10px] md:text-xs">
                       Há mais de 06 anos atuando na Clínica Médica de Pequenos animais.
                     </p>
                   </div>
@@ -198,17 +137,19 @@ export default function Home() {
                         />
                       </svg>
                     </div>
-                    <h3 className="text-white font-bold text-base md:text-lg mb-2 md:mb-3">Conforto</h3>
-                    <p className="text-white text-xs md:text-sm">
+                    <h3 className="text-white font-bold text-sm md:text-base mb-2 md:mb-3">Conforto</h3>
+                    <p className="text-white text-[10px] md:text-xs">
                       Além de equipamento de ponta, utilizamos gel quentinho na barriga dos pacientes, o que ajuda a acalmá-los.
                     </p>
                   </div>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </section>
 
-        <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+        <section id="sobre" className="py-12 md:py-16 lg:py-20 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative">
@@ -222,12 +163,12 @@ export default function Home() {
                 />
               </div>
               <div className="space-y-4 md:space-y-6">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight mb-4 md:mb-6">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary leading-tight mb-4 md:mb-6">
                   Muito Prazer,
                   <br />
                   <span className="font-dancing text-secondary">Cristine Hoffmeister</span>
                 </h2>
-                <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+                <p className="text-sm md:text-base text-gray-700 leading-relaxed">
                   Sou pós-graduada em Clínica Médica de Pequenos Animais e atuo há mais de cinco anos na rotina veterinária, sempre em busca de oferecer o melhor cuidado para cada paciente. Já trabalhei com medicina equina, área que continua sendo uma grande paixão e hobby, mas foi entre os pequenos animais que encontrei minha verdadeira realização. Desde criança, sempre soube que seria veterinária — e hoje vivo essa vocação com amor, técnica e sensibilidade.
                 </p>
               </div>
@@ -235,50 +176,83 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16 lg:py-20 bg-white">
+        <section id="servicos" className="py-12 md:py-16 lg:py-20 bg-white scroll-mt-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-8 md:mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary text-center mb-4 md:mb-6">
               Serviços
             </h2>
+            <p className="text-center text-gray-600 text-sm md:text-base mb-8 md:mb-12">
+              Atendemos as seguintes modalidades de Ultrassonografia Veterinária
+            </p>
             <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-              <div className="bg-[#B9D5EA]/70 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:bg-[#B9D5EA]/80 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                  Abdominal Total
-                </h3>
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet001.jpg)' }}></div>
+                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
+                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+                      Abdominal Total
+                    </h3>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-[#B9D5EA]/70 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:bg-[#B9D5EA]/80 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                  Gestacional
-                </h3>
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet002.jpg)' }}></div>
+                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
+                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+                      Gestacional
+                    </h3>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-[#B9D5EA]/70 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:bg-[#B9D5EA]/80 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                  Torácico
-                </h3>
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet003.jpg)' }}></div>
+                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
+                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+                      Torácica
+                    </h3>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-[#B9D5EA]/70 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:bg-[#B9D5EA]/80 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                  Ocular
-                </h3>
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet004.jpg)' }}></div>
+                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
+                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+                      Ocular
+                    </h3>
+                  </div>
+                </div>
               </div>
 
-              <div className="bg-[#B9D5EA]/70 backdrop-blur-md rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:bg-[#B9D5EA]/80 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center">
-                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4">
-                  Intervencionista
-                </h3>
-                <p className="text-primary text-sm md:text-base opacity-80">
-                  (Citologia, Centeses)
-                </p>
+              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-hidden flex items-center justify-center min-h-[200px] group">
+                <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: 'url(/pet005.jpg)' }}></div>
+                <div className="absolute inset-0 bg-[#B9D5EA]/30 backdrop-blur-sm group-hover:bg-transparent group-hover:backdrop-blur-0 transition-all duration-300"></div>
+                <div className="relative z-10 flex flex-col items-center justify-center">
+                  <div className="bg-white/0 group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-[2px]">
+                    <h3 className="text-lg md:text-xl font-bold text-primary group-hover:text-primary">
+                      Intervencionista
+                    </h3>
+                    <p className="text-primary text-xs md:text-sm opacity-80 group-hover:opacity-100 mt-1">
+                      (Citologia, Centeses)
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <section className="relative w-full my-12 md:my-16 lg:my-20 overflow-hidden">
-          <div className="relative w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-center">
+          <div className="relative w-full min-h-[300px] md:min-h-[350px] lg:min-h-[400px] flex items-center">
             {/* Background Image */}
             <div className="absolute inset-0 w-full h-full">
               <Image
@@ -289,16 +263,16 @@ export default function Home() {
                 quality={90}
               />
               {/* Overlay escuro com gradiente para contraste do texto */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-primary/20"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-transparent max-w-[60%] md:max-w-[55%]"></div>
             </div>
 
             {/* Content */}
             <div className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 w-full">
               <div className="max-w-2xl">
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 md:mb-6 leading-tight">
                   Baixe seu exame em poucos cliques!
                 </h2>
-                <p className="text-base md:text-lg text-white/90 mb-6 md:mb-8 leading-relaxed">
+                <p className="text-sm md:text-base text-white/90 mb-6 md:mb-8 leading-relaxed">
                   Acesse nosso portal de exames e tenha acesso aos laudos do seu pet!
                 </p>
                 <Button className="bg-secondary hover:bg-secondary/90 text-white">
@@ -318,7 +292,7 @@ export default function Home() {
         <section className="py-12 md:py-16 lg:py-20 bg-white">
           <div className="container mx-auto px-4">
             <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 p-8 md:p-12 lg:p-16">
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-8 md:mb-10">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary text-center mb-8 md:mb-10">
                 Avaliações
               </h2>
               <div className="px-4 md:px-8 lg:px-12">
@@ -332,15 +306,15 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-12 md:py-16 lg:py-20 bg-gray-50">
+        <section id="contato" className="py-12 md:py-16 lg:py-20 bg-gray-50 scroll-mt-20">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary text-center mb-4 md:mb-6">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary text-center mb-4 md:mb-6">
               Contato
             </h2>
             
             <div className="space-y-6 md:space-y-8">
                 <div className="text-center">
-                  <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 md:mb-6">
+                  <h3 className="text-lg md:text-xl font-bold text-primary mb-4 md:mb-6">
                     Atendimento Volante em:
                   </h3>
                   <div className="flex flex-wrap justify-center gap-3 md:gap-4">
@@ -353,7 +327,7 @@ export default function Home() {
                     ].map((city) => (
                       <div
                         key={city.name}
-                        className="relative w-24 h-24 md:w-28 md:h-28 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-default flex items-center justify-center text-center p-2 text-white overflow-hidden group"
+                        className="relative w-24 h-24 md:w-28 md:h-28 rounded-lg text-[10px] md:text-xs font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-default flex items-center justify-center text-center p-2 text-white overflow-hidden group"
                         style={{
                           backgroundImage: `url(${city.image})`,
                           backgroundSize: 'cover',
@@ -389,7 +363,7 @@ export default function Home() {
                     </svg>
                     <a
                       href="tel:+5541996852421"
-                      className="text-xl md:text-2xl font-bold hover:text-secondary transition-colors duration-300"
+                      className="text-lg md:text-xl font-bold hover:text-secondary transition-colors duration-300"
                     >
                       (41) 99685-2421
                     </a>
@@ -411,6 +385,7 @@ export default function Home() {
         </section>
       </main>
       <Footer />
+      <FloatingButtons />
     </>
   )
 }

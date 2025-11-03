@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'BrandinkSans';
   src: url('/Fonts/Fonte_BrandinkSans.otf') format('opentype');

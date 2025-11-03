@@ -6,10 +6,10 @@ import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 import { useState, useRef } from 'react'
 
 const menuItems = [
-  { label: 'Início', href: '/' },
-  { label: 'Sobre', href: '/sobre' },
-  { label: 'Serviços', href: '/servicos' },
-  { label: 'Contato', href: '/contato' },
+  { label: 'Início', href: '#inicio' },
+  { label: 'Sobre', href: '#sobre' },
+  { label: 'Serviços', href: '#servicos' },
+  { label: 'Contato', href: '#contato' },
 ]
 
 export default function Header() {
@@ -38,7 +38,7 @@ export default function Header() {
     >
       <div className="container mx-auto px-4 py-3 md:py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center">
+          <Link href="#inicio" className="flex items-center">
             <Image
               src="/logoalt.svg"
               alt="Vethoff Logo"

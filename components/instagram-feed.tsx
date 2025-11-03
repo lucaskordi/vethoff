@@ -85,14 +85,14 @@ export default function InstagramFeed() {
     <div className="w-full">
       <div className="instafeed-wrapper rounded-2xl overflow-hidden bg-white/80 backdrop-blur-md border border-white/20 shadow-xl p-4 md:p-6">
         <div className="mb-6 md:mb-8 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-2 text-center">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-2 text-center">
             Siga-nos no Instagram
           </h2>
           <a
             href="https://www.instagram.com/lab_nest/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-secondary hover:text-primary transition-colors duration-300 text-base md:text-lg font-medium inline-flex items-center gap-2"
+            className="text-secondary hover:text-primary transition-colors duration-300 text-sm md:text-base font-medium inline-flex items-center gap-2"
           >
             @lab_nest
             <svg

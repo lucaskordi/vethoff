@@ -3,10 +3,10 @@ import Link from 'next/link'
 import Button from './button'
 
 const menuItems = [
-  { label: 'Início', href: '/' },
-  { label: 'Sobre', href: '/sobre' },
-  { label: 'Serviços', href: '/servicos' },
-  { label: 'Contato', href: '/contato' },
+  { label: 'Início', href: '#inicio' },
+  { label: 'Sobre', href: '#sobre' },
+  { label: 'Serviços', href: '#servicos' },
+  { label: 'Contato', href: '#contato' },
 ]
 
 export default function Footer() {
@@ -16,7 +16,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Logo */}
           <div className="flex flex-col items-center md:items-start">
-            <Link href="/" className="mb-6 hover:opacity-80 transition-opacity duration-300">
+            <Link href="#inicio" className="mb-6 hover:opacity-80 transition-opacity duration-300">
               <Image
                 src="/logoprincipal.svg"
                 alt="Vethoff Logo"
@@ -29,13 +29,13 @@ export default function Footer() {
 
           {/* Menu */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg font-bold mb-4">Navegação</h3>
+            <h3 className="text-base font-bold mb-4">Navegação</h3>
             <nav className="flex flex-col gap-3">
               {menuItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-white/80 hover:text-secondary transition-colors duration-300 font-medium"
+                  className="text-white/80 hover:text-secondary transition-colors duration-300 font-medium text-sm"
                 >
                   {item.label}
                 </Link>
@@ -44,20 +44,20 @@ export default function Footer() {
           </div>
 
           {/* Botões */}
-          <div className="flex flex-col items-center md:items-start gap-4 w-full md:w-auto">
+          <div className="flex flex-col items-center md:items-start gap-3 w-full md:w-auto">
             <a href="https://wa.me/5541996852421" target="_blank" rel="noopener noreferrer" className="w-full">
-              <Button className="bg-secondary hover:bg-secondary/90 text-white w-full">
+              <Button className="bg-secondary hover:bg-secondary/90 text-white w-full px-3 py-2 md:px-4 md:py-2 text-xs md:text-sm">
                 Agende Agora
               </Button>
             </a>
-            <Button className="bg-secondary hover:bg-secondary/90 text-white w-full">
+            <Button className="bg-secondary hover:bg-secondary/90 text-white w-full px-3 py-2 md:px-4 md:py-2 text-xs md:text-sm">
               Acesse seu Exame
             </Button>
           </div>
 
           {/* Redes Sociais */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="text-lg font-bold mb-4">Redes Sociais</h3>
+            <h3 className="text-base font-bold mb-4">Redes Sociais</h3>
             <div className="flex gap-4">
               <a
                 href="https://www.instagram.com/lab_nest/"
@@ -92,7 +92,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 md:mt-12 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
+        <div className="mt-8 md:mt-12 pt-8 border-t border-white/20 text-center text-white/60 text-xs">
           <p>© {new Date().getFullYear()} VetHoff. Todos os direitos reservados.</p>
         </div>
       </div>
