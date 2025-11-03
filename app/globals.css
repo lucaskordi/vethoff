@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'BrandinkSans';
+  src: url('/Fonts/Fonte_BrandinkSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('/Fonts/Fonte_Dancingscriptot-83xA.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MerriweatherSans';
+  src: url('/Fonts/Fonte_MerriweatherSansBold-RB3o.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
