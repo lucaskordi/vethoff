@@ -1,7 +1,8 @@
 import Header from '@/components/header'
 import Button from '@/components/button'
 import Image from 'next/image'
-import InstagramFeed from '@/components/instagram-feed'
+// import InstagramFeed from '@/components/instagram-feed'
+import InstagramFeedTemp from '@/components/instagram-feed-temp'
 import Script from 'next/script'
 import Footer from '@/components/footer'
 import FloatingButtons from '@/components/floating-buttons'
@@ -274,7 +275,8 @@ export default function Home() {
 
         <section className="py-12 md:py-16 lg:py-20 bg-white">
           <div className="container mx-auto px-4">
-            <InstagramFeed />
+            {/* <InstagramFeed /> */}
+            <InstagramFeedTemp />
           </div>
         </section>
 
