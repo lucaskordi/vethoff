@@ -227,18 +227,6 @@ export default function Home() {
                 <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
                   <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
                     <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
-                      Ocular
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="relative rounded-xl p-6 md:p-8 shadow-lg border border-[#B9D5EA]/30 hover:shadow-xl hover:scale-105 transition-all duration-300 flex-1 min-w-[200px] max-w-[280px] text-center overflow-visible flex flex-col justify-end min-h-[200px] group">
-                <div className="absolute inset-0 bg-cover bg-center rounded-xl" style={{ backgroundImage: 'url(/pet005.jpg)' }}></div>
-                <div className="absolute inset-0 backdrop-blur-0 group-hover:backdrop-blur-md transition-all duration-300 rounded-xl"></div>
-                <div className="relative z-10 flex flex-col items-center justify-end group-hover:justify-start transition-all duration-300 -mb-4 group-hover:mb-0 group-hover:pt-4">
-                  <div className="bg-secondary group-hover:bg-white/95 rounded-lg px-4 py-3 transition-all duration-300 text-center translate-y-8 group-hover:translate-y-0">
-                    <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-primary transition-colors duration-300">
                       Intervencionista
                     </h3>
                     <p className="text-white group-hover:text-primary text-xs md:text-sm opacity-80 group-hover:opacity-80 mt-1 transition-colors duration-300">
